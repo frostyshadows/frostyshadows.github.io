@@ -1,0 +1,111 @@
+@font-face {
+  font-family: lato-regular;
+  src: url(Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: volkorn-semibolditalic;
+  src: url(Vollkorn-SemiBoldItalic.ttf);
+}
+
+@font-face {
+  font-family: lato-bold-italic;
+  src: url(Lato-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: lato-bold;
+  src: url(Lato-Bold.ttf);
+}
+
+body {
+  background-color: black;
+  margin: 8%;
+  font-family: lato-regular;
+}
+
+h1, p {
+  color: white;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+p {
+  font-size: 24px;
+}
+
+a {
+  text-decoration: underline;
+  transition: font-size 0.2s;
+}
+
+a:hover {
+  font-size: 26px;
+}
+
+.lato-bold {
+  font-family: lato-bold;
+}
+
+.lato-bold-italic {
+  font-family: lato-bold-italic;
+}
+
+.volkorn {
+  font-family: volkorn-semibolditalic;
+}
+
+.name {
+  font-size: 50px;
+  color: lightskyblue;
+}
+
+.yelp {
+  color: #F15C4F; /* https://www.yelp.com/styleguide/color */
+}
+
+.ubc {
+  color: #98B2C3; /* https://clf.ubc.ca/design-specifications/#colours */
+}
+
+.linkedin {
+  color: #2867B2; /* https://brandpalettes.com/linkedin-color-codes/ */
+}
+
+.github {
+  color: #FFD33D; /* https://styleguide.github.com/primer/utilities/colors/ */
+}
+
+.devpost {
+  color: #2986a5;
+}
+
+.medium {
+  color: #029e74;
+}
+
+.launchpad {
+  color: #55bc9b; /* https://github.com/ubclaunchpad/ubclaunchpad.github.io/blob/master/css/stylesheets/site.css */
+}
+
+.instagram {
+  color: #E1306C; /* https://brandpalettes.com/instagram-color-codes/ */
+}
+
+.redbubble {
+  color: #FF596F;
+}
+
+.twitter {
+  color: #1da1f2;
+}
+
+.hadrosaur {
+  color: #007bff;
+}
+
+.buttondown {
+  color: #0069ff;
+}
