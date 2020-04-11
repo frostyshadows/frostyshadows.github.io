@@ -57,6 +57,11 @@ a:hover {
   font-family: volkorn-semibolditalic;
 }
 
+.emphasis {
+  font-size: 26px;
+  color: lightskyblue;
+}
+
 .name {
   font-size: 50px;
   color: lightskyblue;
