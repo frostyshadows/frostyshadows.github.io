@@ -68,51 +68,81 @@ a:hover {
 }
 
 .yelp {
-  color: #F15C4F; /* https://www.yelp.com/styleguide/color */
+  color: #f15c4f; /* https://www.yelp.com/styleguide/color */
 }
 
 .ubc {
-  color: #98B2C3; /* https://clf.ubc.ca/design-specifications/#colours */
+  color: #98b2c3; /* https://clf.ubc.ca/design-specifications/#colours */
 }
 
 .linkedin {
-  color: #2867B2; /* https://brandpalettes.com/linkedin-color-codes/ */
+  color: #2867b2; /* https://brandpalettes.com/linkedin-color-codes/ */
+}
+.linkedin:hover {
+  color: #4180cc;
 }
 
 .github {
-  color: #FFD33D; /* https://styleguide.github.com/primer/utilities/colors/ */
+  color: #ffd33d; /* https://styleguide.github.com/primer/utilities/colors/ */
+}
+.github:hover {
+  color: #ffe48a;
 }
 
 .devpost {
   color: #2986a5;
 }
+.devpost:hover {
+  color: #49a9c9;
+}
 
 .medium {
   color: #029e74;
+}
+.medium:hover {
+  color: #14c495;
 }
 
 .launchpad {
   color: #55bc9b; /* https://github.com/ubclaunchpad/ubclaunchpad.github.io/blob/master/css/stylesheets/site.css */
 }
+.launchpad:hover {
+  color: #71d1b3;
+}
 
 .instagram {
-  color: #E1306C; /* https://brandpalettes.com/instagram-color-codes/ */
+  color: #e1306c; /* https://brandpalettes.com/instagram-color-codes/ */
+}
+.instagram:hover {
+  color: #f24e85;
 }
 
 .redbubble {
-  color: #FF596F;
+  color: #ff596f;
+}
+.redbubble:hover {
+  color: #ff7a8c;
 }
 
 .twitter {
   color: #1da1f2;
 }
+.twitter:hover {
+  color: #45b8ff;
+}
 
 .hadrosaur {
   color: #007bff;
 }
+.hadrosaur:hover {
+  color: #3396ff;
+}
 
 .buttondown {
   color: #0069ff;
+}
+.buttondown:hover {
+  color: #4592ff;
 }
 
 .title, .first, .second, .third, .fourth {
