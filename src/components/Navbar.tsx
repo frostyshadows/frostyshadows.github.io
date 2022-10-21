@@ -32,7 +32,7 @@ export default function Navbar() {
               </Disclosure.Button>
             </div>
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-              <div className="flex flex-shrink-0 items-center">
+              <div className="flex flex-shrink-0 font-semibold items-center">
                 <a
                   href='/#'
                 >
@@ -43,8 +43,8 @@ export default function Navbar() {
                 <div className="absolute space-x-4 right-0">
                   {navigation.map((item) => (
                     <div className={classNames(
-                      item.current ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-indigo-300 hover:text-white',
-                      'px-2 text-sm font-medium inline-block'
+                      item.current ? 'bg-gray-900 text-white' : 'text-gray-900 hover:bg-indigo-200 hover:text-white',
+                      'px-2 font-semibold inline-block'
                     )}>
                       <a
                         key={item.name}
@@ -53,7 +53,7 @@ export default function Navbar() {
                       >
                         {item.name}
                       </a>
-                      <div className="h-2 ml-2 -mt-2 bg-indigo-300 text-gray-900 hover:bg-gray-700 hover:text-white" />
+                      <div className="h-2 ml-2 -mr-1 -mt-2 bg-indigo-200" />
                     </div>
                   ))}
                 </div>
