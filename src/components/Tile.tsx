@@ -10,9 +10,9 @@ export type TileModel = {
 
 export default function Tile(model: TileModel) {
   return (
-    <div className="inline-block justify-start text-start p-4 relative">
-      <img src="/assets/dotted-border.png" className="w-1/4" />
-      <div className="absolute top-1/4 left-1/4">
+    <div className="max-w-xl inline-block justify-start text-start m-12 p-4 relative">
+      <img src="/assets/dotted-border.png" className="w-24" />
+      <div className="absolute top-12 left-12">
         <div className="text-3xl font-serif pb-2">
           <p>{model.title}</p>
         </div>

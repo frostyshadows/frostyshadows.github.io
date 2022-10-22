@@ -48,7 +48,7 @@ export default function Fiction() {
     <div className="bg-white">
       {FictionHeader()}
 
-      <div className="flex-wrap items-start">
+      <div className="grid grid-cols-1 sm:grid-cols-2 items-start">
         {stories.map((story) => (
           Tile(story)
         ))
