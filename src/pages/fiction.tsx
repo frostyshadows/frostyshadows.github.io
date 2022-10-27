@@ -1,6 +1,17 @@
 import React from 'react';
 import { CtaButtonModel } from '../components/CtaButton';
-import Tile, { TileModel } from '../components/Tile'
+import Tile, { TileModel } from '../components/Tile';
+
+let snarlCta: CtaButtonModel = {
+  ctaText: "get a copy",
+  ctaLink: "https://snarljournal.square.site/product/pre-order-issue-four-fall-2022/16?cp=true&sa=true&sbp=false&q=false",
+}
+let snarl: TileModel = {
+  title: "Crowntail Cichlids",
+  description: "A Chinese-Canadian college freshman discovers there’s more to his roommate than meets the eye.",
+  timestamp: "Snarl #04 (Fall 2022)",
+  ctaButton: snarlCta,
+}
 
 let externalProcessorsCta: CtaButtonModel = {
   ctaText: "read it",
@@ -12,17 +23,28 @@ let externalProcessors: TileModel = {
   timestamp: "Luna Station Quarterly Issue #051 (Fall 2022)",
   ctaButton: externalProcessorsCta,
 }
+
 let memoriesInAmberCta: CtaButtonModel = {
   ctaText: "get a copy",
   ctaLink: "https://www.infiniteworldsmagazine.com/store/p/infinite-worlds-8-direct-edition-pre-order",
 }
 let memoriesInAmber: TileModel = {
   title: "Memories In Amber",
-  description: "A race against time to fix a bug in a widely-used memory aide device",
+  description: "A race against time to fix a bug in a widely-used memory aide device.",
   timestamp: "Infinite Worlds Issue #8 (Summer 2021)",
   ctaButton: memoriesInAmberCta,
 }
 
+let starseedsCta: CtaButtonModel = {
+  ctaText: "get a copy",
+  ctaLink: "https://www.hadrosaur.com/ExchangeStudents.php",
+}
+let starseeds: TileModel = {
+  title: "Starseeds",
+  description: "Reishi waits for her extended family to whisk her away from her dreary life on Earth.",
+  timestamp: "Exchange Students Anthology (Summer 2020)",
+  ctaButton: starseedsCta,
+}
 
 let lsqInterviewCta: CtaButtonModel = {
   ctaText: "read it",
@@ -30,14 +52,16 @@ let lsqInterviewCta: CtaButtonModel = {
 }
 let lsqInterview: TileModel = {
   title: "Luna Station Quarterly Interview",
-  description: "Talking about the ideas behind External Processors",
+  description: "Talking about the ideas behind External Processors.",
   timestamp: "Fall 2022",
   ctaButton: lsqInterviewCta,
 }
 
 const stories = [
+  snarl,
   externalProcessors,
   memoriesInAmber,
+  starseeds,
   lsqInterview,
 ]
 
@@ -45,7 +69,7 @@ const stories = [
 
 export default function Fiction() {
   return (
-    <div className="bg-white">
+    <div className="bg-white pb-8">
       {FictionHeader()}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 items-start">
