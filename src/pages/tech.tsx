@@ -2,7 +2,6 @@ import React from 'react';
 import { CtaButtonModel } from '../components/CtaButton';
 import Tile, { TileModel } from '../components/Tile';
 import LinkWithIcon, { LinkWithIconModel } from '../components/LinkWithIcon';
-import FeedIcon from '@mui/icons-material/Feed';
 
 let mediumCta: CtaButtonModel = {
   ctaText: "read it",
@@ -10,7 +9,7 @@ let mediumCta: CtaButtonModel = {
 }
 let mediumBlog: TileModel = {
   title: "Medium Blog",
-  description: "Writing an article is my favorite way to learn a new technical skill. My blog covers Android development, Kotlin, mobile interviews, and tech career. I've been published in Droidcon and Android Weekly.",
+  description: "My articles cover Android development, Kotlin, mobile interviews, and tech career. I've been published in Droidcon and Android Weekly.",
   ctaButton: mediumCta,
 }
 
@@ -86,30 +85,34 @@ export default function Tech() {
     <div className="bg-white pb-8">
       {TechHeader()}
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 items-start">
-        {projects.map((project) => (
-          Tile(project)
-        ))
-        }
+      <div className="max-w-7xl mx-auto py-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-start">
+          {projects.map((project) => (
+            Tile(project)
+          ))
+          }
+        </div>
+        {TechResources()}
       </div>
-      {TechResources()}
     </div>
   )
 }
 
 function TechHeader() {
   return (
-    <div className="bg-indigo-50 p-8">
-      <div className="flex text-5xl font-serif pb-12">
-        <p>Tech</p>
+    <div className="bg-indigo-50 p-8 flex flex-row place-content-center">
+      <div className="max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div className="flex text-5xl font-serif pb-12">
+          <p>Tech</p>
+        </div>
+        <p className="lg:w-3/5 flex text-l text-start leading-loose">
+          I started programming in college. My interest in technology began when the first iPhone came out and
+          I discovered mobile gaming. I was lucky to land an Android engineering position for my first co-op
+          placement in 2017, where I learned Kotlin 1.0 and participated in upgrading RxJava from 1 to 2 and
+          Dagger from 1 to 2. I've focused on Android ever since.
+          My favorite way to keep learning is through writing guides and tutorials for the developer community.
+        </p>
       </div>
-      <p className="w-3/5 flex text-l text-start leading-loose">
-        I'm an Android engineer working at Cash App.
-        I was born in Suzhou, China and raised in Vancouver, Canada,
-        where I graduated from the University of British Columbia with
-        a major in Computer Science and a minor in Psychology.
-        Prior to Cash App, I worked on Android at Robinhood and Yelp.
-      </p>
     </div>
   )
 }

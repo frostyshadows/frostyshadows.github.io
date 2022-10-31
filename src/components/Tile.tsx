@@ -17,18 +17,18 @@ export default function Tile(model: TileModel) {
         <div className="text-3xl font-serif pb-2">
           <p>{model.title}</p>
         </div>
-        <p className="w-4/5text-start pb-4">
+        <p className="w-4/5 text-start pb-4">
           {model.description}
         </p>
         {
           (model.timestamp != null) ?
-            <p className="w-4/5text-start pb-4 italic">
+            <p className="w-4/5 text-start pb-4 italic">
               {model.timestamp}
             </p> : null
         }
         {
           (model.ctaButton != null) ?
-            CtaButton(model.ctaButton) : null
+            <div className="pt-4"> {CtaButton(model.ctaButton)} </div> : null
         }
       </div>
     </div>

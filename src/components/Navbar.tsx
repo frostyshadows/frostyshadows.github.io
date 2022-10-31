@@ -32,11 +32,11 @@ export default function Navbar() {
               </Disclosure.Button>
             </div>
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-              <div className="flex flex-shrink-0 font-semibold items-center">
+              <div className="flex flex-shrink-0 font-semibold items-center text-lg">
                 <a
                   href='/#'
                 >
-                  Sherry Yuan
+                  🌱 Sherry Yuan
                 </a>
               </div>
               <div className="hidden sm:ml-6 sm:block">

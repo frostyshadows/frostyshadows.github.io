@@ -53,7 +53,7 @@ let lsqInterviewCta: CtaButtonModel = {
 let lsqInterview: TileModel = {
   title: "Luna Station Quarterly Interview",
   description: "Talking about the ideas behind External Processors.",
-  timestamp: "Fall 2022",
+  timestamp: "(Fall 2022)",
   ctaButton: lsqInterviewCta,
 }
 
@@ -72,11 +72,13 @@ export default function Fiction() {
     <div className="bg-white pb-8">
       {FictionHeader()}
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 items-start">
-        {stories.map((story) => (
-          Tile(story)
-        ))
-        }
+      <div className="max-w-7xl mx-auto py-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-start">
+          {stories.map((story) => (
+            Tile(story)
+          ))
+          }
+        </div>
       </div>
     </div>
   )
@@ -84,17 +86,19 @@ export default function Fiction() {
 
 function FictionHeader() {
   return (
-    <div className="bg-indigo-50 p-8">
-      <div className="flex text-5xl font-serif pb-12">
-        <p>Fiction</p>
+    <div className="bg-indigo-50 p-8 flex flex-row place-content-center">
+      <div className="max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div className="flex text-5xl font-serif pb-12">
+          <p>Fiction</p>
+        </div>
+        <p className="lg:w-3/5 flex text-l text-start leading-loose">
+          I write speculative fiction. I've published a few short stories so far,
+          and one of my life goals is to publish a novel.
+          To me, programming and fiction writing are symbiotic creative hobbies -
+          there are many parallels in my processes of planning a feature or story,
+          writing code or narrative, receiving feedback, and revising.
+        </p>
       </div>
-      <p className="w-3/5 flex text-l text-start leading-loose">
-        I'm an Android engineer working at Cash App.
-        I was born in Suzhou, China and raised in Vancouver, Canada,
-        where I graduated from the University of British Columbia with
-        a major in Computer Science and a minor in Psychology.
-        Prior to Cash App, I worked on Android at Robinhood and Yelp.
-      </p>
     </div>
   )
 }

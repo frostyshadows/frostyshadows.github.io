@@ -8,16 +8,15 @@ export type CtaButtonModel = {
 }
 
 export default function CtaButton(model: CtaButtonModel) {
-  let backgroundColor = model.backgroundColor ? ("bg-" + model.backgroundColor) : "bg-gray-900"
-  let borderColor = model.backgroundColor ? ("border-" + model.backgroundColor) : "border-gray-900"
+  let btnColor = model.backgroundColor ?? "#111827"
   return (
     <div className="inline-block">
-      <Button className={backgroundColor + " text-white px-8 py-2"} >
+      <Button className="w-60 text-white font-medium px-8 py-2" style={{ backgroundColor: btnColor }} >
         <a href={model.ctaLink} target="_blank" rel="noopener noreferrer">
           {model.ctaText}
         </a>
       </Button>
-      <div className={borderColor + " h-9 ml-1 -mr-1 -mt-8 border-2"} />
+      <div className="h-9 ml-1 -mr-1 -mt-8 border-2" style={{ borderColor: btnColor }} />
     </div>
   )
 }
