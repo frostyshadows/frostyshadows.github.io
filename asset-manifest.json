@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.12c1dc60.css",
-    "main.js": "/static/js/main.0c906195.js",
+    "main.js": "/static/js/main.f0b12199.js",
     "static/media/Mulish-Regular.ttf": "/static/media/Mulish-Regular.06ce9c37c31ae94797a2.ttf",
     "static/media/AbrilFatface-Regular.otf": "/static/media/AbrilFatface-Regular.1ea9699ddc59840e7be3.otf",
     "index.html": "/index.html",
     "main.12c1dc60.css.map": "/static/css/main.12c1dc60.css.map",
-    "main.0c906195.js.map": "/static/js/main.0c906195.js.map"
+    "main.f0b12199.js.map": "/static/js/main.f0b12199.js.map"
   },
   "entrypoints": [
     "static/css/main.12c1dc60.css",
-    "static/js/main.0c906195.js"
+    "static/js/main.f0b12199.js"
   ]
 }
