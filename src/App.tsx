@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate
-} from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import './App.css';
 import Navbar from "./components/Navbar";
 import Art from "./pages/art";
@@ -15,23 +10,11 @@ import Inspiration from "./pages/inspiration";
 import Tech from "./pages/tech";
 
 function App() {
-  // const [load, upadateLoad] = useState(true);
-
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     upadateLoad(false);
-  //   }, 1200);
-
-  //   return () => clearTimeout(timer);
-  // }, []);
 
   return (
     <Router>
-       {/* <Preloader load={load} /> */}
-      {/* <div className="App" id={load ? "no-scroll" : "scroll"}> */}
       <div className="App" id="scroll">
         <Navbar />
-        {/* <ScrollToTop /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/tech" element={<Tech />} />
@@ -39,9 +22,8 @@ function App() {
           <Route path="/art" element={<Art />} />
           <Route path="/inspiration" element={<Inspiration />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<Navigate to="/"/>} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
-        {/* <Footer /> */}
       </div>
     </Router>
   );
