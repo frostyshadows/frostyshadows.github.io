@@ -6,7 +6,7 @@ export type LinkWithIconModel = {
   icon: string;
 }
 
-export default function LinkWithIcon(model: LinkWithIconModel) {
+export default function ExternalLinkWithIcon(model: LinkWithIconModel) {
   return (
     <div className="inline-flex p-2 justify-start text-start underline hover:text-indigo-600">
       <img src={model.icon} className="w-6 mr-2" />

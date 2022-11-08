@@ -1,10 +1,10 @@
 import React from 'react';
 import { CtaButtonModel } from '../components/CtaButton';
 import Tile, { TileModel } from '../components/Tile';
-import LinkWithIcon, { LinkWithIconModel } from '../components/LinkWithIcon';
+import ExternalLinkWithIcon, { LinkWithIconModel } from '../components/ExternalLinkWithIcon';
 
 let mediumCta: CtaButtonModel = {
-  ctaText: "read it",
+  ctaText: "read",
   ctaLink: "https://medium.com/@sherryyuan",
 }
 let mediumBlog: TileModel = {
@@ -14,7 +14,7 @@ let mediumBlog: TileModel = {
 }
 
 let emomTimerCta: CtaButtonModel = {
-  ctaText: "get it on google play",
+  ctaText: "download",
   ctaLink: "https://play.google.com/store/apps/details?id=com.sherryyuan.emomtimer&hl=en_US&gl=US",
 }
 let emomTimer: TileModel = {
@@ -63,7 +63,7 @@ let kotlinWeekly: LinkWithIconModel = {
   icon: "/assets/icon-feed.png",
 }
 let swlw: LinkWithIconModel = {
-  linkText: "Software Leed Weekly newsletter",
+  linkText: "Software Lead Weekly newsletter",
   linkUrl: "https://softwareleadweekly.com/",
   icon: "/assets/icon-feed.png",
 }
@@ -72,12 +72,18 @@ let androidSchool: LinkWithIconModel = {
   linkUrl: "https://github.com/Yelp/android-school",
   icon: "/assets/icon-github.png",
 }
+let refactoringGuru: LinkWithIconModel = {
+  linkText: "Refactoring Guru",
+  linkUrl: "https://refactoring.guru/refactoring",
+  icon: "/assets/icon-web.png",
+}
 
 const resources = [
   androidWeekly,
   kotlinWeekly,
   swlw,
   androidSchool,
+  refactoringGuru,
 ]
 
 export default function Tech() {
@@ -106,11 +112,9 @@ function TechHeader() {
           <p>Tech</p>
         </div>
         <p className="lg:w-3/5 flex text-l text-start leading-loose">
-          I started programming in college. My interest in technology began when the first iPhone came out and
-          I discovered mobile gaming. I was lucky to land an Android engineering position for my first co-op
-          placement in 2017, where I learned Kotlin 1.0 and participated in upgrading RxJava from 1 to 2 and
-          Dagger from 1 to 2. I've focused on Android ever since.
-          My favorite way to keep learning is through writing guides and tutorials for the developer community.
+          I've always been interested in mobile development, and was lucky to land an Android engineering position for my first co-op
+          placement in 2017. I've focused on Android ever since.
+          My favorite way to keep learning is through writing guides and tutorials for the developer community!
         </p>
       </div>
     </div>
@@ -127,11 +131,11 @@ function TechResources() {
         </div>
       </div>
       <p className="w-3/5 flex text-l text-start leading-loose italic">
-        My favorite resources for learning and staying on top of software engineering.
+        Favorite resources for learning and staying on top of software engineering.
       </p>
       <div className="grid grid-cols-1 items-start">
         {resources.map((resource) => (
-          LinkWithIcon(resource)
+          ExternalLinkWithIcon(resource)
         ))
         }
       </div>

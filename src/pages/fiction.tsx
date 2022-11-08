@@ -2,6 +2,18 @@ import React from 'react';
 import { CtaButtonModel } from '../components/CtaButton';
 import Tile, { TileModel } from '../components/Tile';
 
+let bestCroissantsCta: CtaButtonModel = {
+  ctaText: "support on kickstarter",
+  ctaLink: "https://www.kickstarter.com/projects/samuelcooke/habitats-magazine-optimistic-science-fiction?ref=user_menu",
+}
+let bestCroissants: TileModel = {
+  title: "The Best Croissants in This Quadrant of the Universe",
+  description: "An intergalactic superhero pursues his passion for baking.",
+  timestamp: "Habitats #1 (Spring 2023)",
+  ctaButton: bestCroissantsCta,
+}
+
+
 let snarlCta: CtaButtonModel = {
   ctaText: "get a copy",
   ctaLink: "https://snarljournal.square.site/product/pre-order-issue-four-fall-2022/16?cp=true&sa=true&sbp=false&q=false",
@@ -14,7 +26,7 @@ let snarl: TileModel = {
 }
 
 let externalProcessorsCta: CtaButtonModel = {
-  ctaText: "read it",
+  ctaText: "read",
   ctaLink: "https://lunastationquarterly.com/story/external-processors/",
 }
 let externalProcessors: TileModel = {
@@ -47,7 +59,7 @@ let starseeds: TileModel = {
 }
 
 let lsqInterviewCta: CtaButtonModel = {
-  ctaText: "read it",
+  ctaText: "read",
   ctaLink: "https://lunastationquarterly.com/issue-051-author-interview-sherry-yuan-and-external-processors/",
 }
 let lsqInterview: TileModel = {
@@ -58,6 +70,7 @@ let lsqInterview: TileModel = {
 }
 
 const stories = [
+  bestCroissants,
   snarl,
   externalProcessors,
   memoriesInAmber,
@@ -92,10 +105,10 @@ function FictionHeader() {
           <p>Fiction</p>
         </div>
         <p className="lg:w-3/5 flex text-l text-start leading-loose">
-          I write speculative fiction. I've published a few short stories so far,
+          I've published a few short stories so far, mostly speculative fiction,
           and one of my life goals is to publish a novel.
           To me, programming and fiction writing are symbiotic creative hobbies -
-          there are many parallels in my processes of planning a feature or story,
+          there are many parallels in the processes of planning a feature or story,
           writing code or narrative, receiving feedback, and revising.
         </p>
       </div>
