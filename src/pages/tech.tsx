@@ -9,7 +9,7 @@ let mediumCta: CtaButtonModel = {
 }
 let mediumBlog: TileModel = {
   title: "Medium Blog",
-  description: "My articles cover Android development, Kotlin, mobile interviews, and tech career. I've been published in Droidcon and Android Weekly.",
+  description: "Articles covering Android development, Kotlin, mobile interviews, and tech career. I've been published in Droidcon and Android Weekly.",
   ctaButton: mediumCta,
 }
 
@@ -29,7 +29,7 @@ let coffeeAndCodingCta: CtaButtonModel = {
 }
 let coffeeAndCoding: TileModel = {
   title: "Coffee & Coding Interview",
-  description: "I discuss working with internal libraries, dependency injection, and declarative UI frameworks.",
+  description: "Discussion on working with internal libraries, dependency injection, and declarative UI frameworks.",
   timestamp: "Coffee & Coding Podcast S1E8 (Summer 2020)",
   ctaButton: coffeeAndCodingCta,
 }
