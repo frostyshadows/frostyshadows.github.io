@@ -21,7 +21,7 @@ let snarlCta: CtaButtonModel = {
 let snarl: TileModel = {
   title: "Crowntail Cichlids",
   description: "A Chinese-Canadian college freshman discovers there’s more to his roommate than meets the eye.",
-  timestamp: "Snarl #04 (Fall 2022)",
+  timestamp: "Snarl #4 (Fall 2022)",
   ctaButton: snarlCta,
 }
 
@@ -32,7 +32,7 @@ let externalProcessorsCta: CtaButtonModel = {
 let externalProcessors: TileModel = {
   title: "External Processors",
   description: "A near future where people can purchase additional brain processing power through an app. ",
-  timestamp: "Luna Station Quarterly Issue #051 (Fall 2022)",
+  timestamp: "Luna Station Quarterly Issue #51 (Fall 2022)",
   ctaButton: externalProcessorsCta,
 }
 
