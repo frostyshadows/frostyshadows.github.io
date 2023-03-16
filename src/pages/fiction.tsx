@@ -2,6 +2,16 @@ import React from 'react';
 import { CtaButtonModel } from '../components/CtaButton';
 import Tile, { TileModel } from '../components/Tile';
 
+let newsletterCta: CtaButtonModel = {
+  ctaText: "subscribe",
+  ctaLink: "https://sherryyuan.substack.com/",
+}
+let newsletter: TileModel = {
+  title: "Flash Fiction Newsletter",
+  description: "Sporadic doses of flash fiction.",
+  ctaButton: newsletterCta,
+}
+
 let bestCroissantsCta: CtaButtonModel = {
   ctaText: "support on kickstarter",
   ctaLink: "https://www.kickstarter.com/projects/samuelcooke/habitats-magazine-optimistic-science-fiction?ref=user_menu",
@@ -12,7 +22,6 @@ let bestCroissants: TileModel = {
   timestamp: "Habitats #1 (Spring 2023)",
   ctaButton: bestCroissantsCta,
 }
-
 
 let snarlCta: CtaButtonModel = {
   ctaText: "get a copy",
@@ -70,6 +79,7 @@ let lsqInterview: TileModel = {
 }
 
 const stories = [
+  newsletter,
   bestCroissants,
   snarl,
   externalProcessors,
