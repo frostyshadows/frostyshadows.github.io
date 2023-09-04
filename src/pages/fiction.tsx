@@ -12,9 +12,21 @@ let newsletter: TileModel = {
   ctaButton: newsletterCta,
 }
 
+let mooncakeCta: CtaButtonModel = {
+  ctaText: "read",
+  ctaLink: "https://translunartravelerslounge.com/2023/08/15/mooncake-by-sherry-yuan/",
+}
+
+let mooncake: TileModel = {
+  title: "Mooncake",
+  description: "A young werewolf tries to leave a good impression at her boyfriend's family's Mid-Autumn Festival dinner, despite the full moon.",
+  timestamp: "Translunar Travelers Lounge #9 (August 2023)",
+  ctaButton: mooncakeCta,
+}
+
 let bestCroissantsCta: CtaButtonModel = {
-  ctaText: "support on kickstarter",
-  ctaLink: "https://www.kickstarter.com/projects/samuelcooke/habitats-magazine-optimistic-science-fiction?ref=user_menu",
+  ctaText: "get a copy",
+  ctaLink: "https://habitatspress.com/products/habitats-volume-1",
 }
 let bestCroissants: TileModel = {
   title: "The Best Croissants in This Quadrant of the Universe",
@@ -23,15 +35,15 @@ let bestCroissants: TileModel = {
   ctaButton: bestCroissantsCta,
 }
 
-let snarlCta: CtaButtonModel = {
+let crowntailCichlidsCta: CtaButtonModel = {
   ctaText: "get a copy",
   ctaLink: "https://snarljournal.square.site/product/pre-order-issue-four-fall-2022/16?cp=true&sa=true&sbp=false&q=false",
 }
-let snarl: TileModel = {
+let crowntailCichlids: TileModel = {
   title: "Crowntail Cichlids",
   description: "A Chinese-Canadian college freshman discovers there’s more to his roommate than meets the eye.",
   timestamp: "Snarl #4 (Fall 2022)",
-  ctaButton: snarlCta,
+  ctaButton: crowntailCichlidsCta,
 }
 
 let externalProcessorsCta: CtaButtonModel = {
@@ -80,8 +92,9 @@ let lsqInterview: TileModel = {
 
 const stories = [
   newsletter,
+  mooncake,
   bestCroissants,
-  snarl,
+  crowntailCichlids,
   externalProcessors,
   memoriesInAmber,
   starseeds,
