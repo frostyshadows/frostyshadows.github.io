@@ -57,21 +57,31 @@ let androidWeekly: LinkWithIconModel = {
   linkUrl: "https://androidweekly.net/",
   icon: "/assets/icon-feed.png",
 }
+
 let kotlinWeekly: LinkWithIconModel = {
   linkText: "Kotlin Weekly newsletter",
   linkUrl: "http://www.kotlinweekly.net/",
   icon: "/assets/icon-feed.png",
 }
+
 let swlw: LinkWithIconModel = {
   linkText: "Software Lead Weekly newsletter",
   linkUrl: "https://softwareleadweekly.com/",
   icon: "/assets/icon-feed.png",
 }
+
+let pragmaticEngineer: LinkWithIconModel = {
+  linkText: "The Pragmatic Engineer newsletter",
+  linkUrl: "https://newsletter.pragmaticengineer.com/",
+  icon: "/assets/icon-feed.png",
+}
+
 let androidSchool: LinkWithIconModel = {
   linkText: "Yelp Android School repo",
   linkUrl: "https://github.com/Yelp/android-school",
   icon: "/assets/icon-github.png",
 }
+
 let refactoringGuru: LinkWithIconModel = {
   linkText: "Refactoring Guru",
   linkUrl: "https://refactoring.guru/refactoring",
@@ -82,6 +92,7 @@ const resources = [
   androidWeekly,
   kotlinWeekly,
   swlw,
+  pragmaticEngineer,
   androidSchool,
   refactoringGuru,
 ]
