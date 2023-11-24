@@ -43,6 +43,7 @@ function Fiction() {
         {ListText("Never Let Me Go, Kazuo Ishiguro")}
         {ListText("A Little Life, Hanya Yanagihara")}
         {ListText("Exhalation, Ted Chiang")}
+        {ListText("Our Share of Night, Mariana Enriquez")}
         {ListText("It, Stephen King")}
         {ListText("Oryx and Crake, Margaret Atwood")}
         {ListText("Jonathan Strange & Mr. Norrell, Susanna Clarke")}

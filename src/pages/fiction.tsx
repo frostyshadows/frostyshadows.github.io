@@ -12,11 +12,21 @@ let newsletter: TileModel = {
   ctaButton: newsletterCta,
 }
 
+let wordThiefCta: CtaButtonModel = {
+  ctaText: "read",
+  ctaLink: "https://www.twentytwotwentyeight.com/single-post/fiction-the-word-thief-by-sherry-yuan",
+}
+let wordThief: TileModel = {
+  title: "The Word Thief",
+  description: "An aging writer slowly loses her vocabulary.",
+  timestamp: "Twenty-two Twenty-eight (November 2023)",
+  ctaButton: wordThiefCta,
+}
+
 let mooncakeCta: CtaButtonModel = {
   ctaText: "read",
   ctaLink: "https://translunartravelerslounge.com/2023/08/15/mooncake-by-sherry-yuan/",
 }
-
 let mooncake: TileModel = {
   title: "Mooncake",
   description: "A young werewolf tries to leave a good impression at her boyfriend's family's Mid-Autumn Festival dinner, despite the full moon.",
@@ -92,6 +102,7 @@ let lsqInterview: TileModel = {
 
 const stories = [
   newsletter,
+  wordThief,
   mooncake,
   bestCroissants,
   crowntailCichlids,

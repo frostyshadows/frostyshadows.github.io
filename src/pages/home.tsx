@@ -12,7 +12,7 @@ export default function Home() {
           </div>
         </div>
         <p className="lg:w-3/5 flex text-start text-l leading-loose">
-          I'm an Android engineer working at Cash App.
+          I'm an Android engineer working at Cash App in San Francisco.
           I was born in Suzhou, China and raised in Vancouver, Canada,
           where I graduated from the University of British Columbia with
           a major in Computer Science and a minor in Psychology.
