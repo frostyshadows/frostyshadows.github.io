@@ -16,7 +16,11 @@ export default function Home() {
           I was born in Suzhou, China and raised in Vancouver, Canada,
           where I graduated from the University of British Columbia with
           a major in Computer Science and a minor in Psychology.
-          Prior to Cash App, I worked on Android at Robinhood and Yelp.
+          Prior to Cash App, I worked on Android at Robinhood and Yelp. 
+        <br></br>
+          When not writing code, I write fiction, mostly speculative. 
+          My short stories have been published in Translunar Travelers Lounge,
+          Infinite Worlds, and Luna Station Quarterly.
         </p>
       </div>
     </div>
