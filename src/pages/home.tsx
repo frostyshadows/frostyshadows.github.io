@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default function Home() {
   return (
@@ -11,18 +11,36 @@ export default function Home() {
             <div className="h-6 ml-2 -mr-2 -mt-6 bg-indigo-200" />
           </div>
         </div>
-        <p className="lg:w-3/5 flex text-start text-l leading-loose">
-          I'm an Android engineer working at Cash App in San Francisco.
-          I was born in Suzhou, China and raised in Vancouver, Canada,
-          where I graduated from the University of British Columbia with
-          a major in Computer Science and a minor in Psychology.
-          Prior to Cash App, I worked on Android at Robinhood and Yelp. 
-        <br></br>
-          When not writing code, I write fiction, mostly speculative. 
-          My short stories have been published in Translunar Travelers Lounge,
-          Infinite Worlds, and Luna Station Quarterly.
-        </p>
+        <div className="flex flex-col lg:flex-row">
+          <p className="lg:w-3/5 text-start text-l leading-loose">
+            I'm an Android engineer working at Cash App in San Francisco. I was
+            born in Suzhou, China and raised in Vancouver, Canada, where I
+            graduated from the University of British Columbia with a major in
+            Computer Science and a minor in Psychology. Prior to Cash App, I
+            worked on Android at Robinhood and Yelp.
+            <br></br>
+            When not writing code, I write fiction, usually speculative. My
+            short stories have been published in Translunar Travelers Lounge,
+            Infinite Worlds, and Luna Station Quarterly.
+          </p>
+          <div className="lg:w-2/5 justify-center">
+            <div className="inline-block relative">
+              <img
+                src="/assets/profile-pic.png"
+                className="mt-12 lg:mt-0 w-48"
+              />
+              <img
+                src="/assets/dotted-border.png"
+                className="w-20 absolute top-4 lg:-top-8 -left-8"
+              />
+              <img
+                src="/assets/dotted-border.png"
+                className="rotate-180 w-20 absolute -bottom-8 -right-8"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  )
+  );
 }
