@@ -1,6 +1,6 @@
-import React from 'react';
-import ListText from '../components/ListText';
-import ListLink from '../components/ListLink';
+import React from "react";
+import ListText from "../components/ListText";
+import ListLink from "../components/ListLink";
 
 export default function Inspiration() {
   return (
@@ -14,7 +14,7 @@ export default function Inspiration() {
         {Misc()}
       </div>
     </div>
-  )
+  );
 }
 
 function InspirationHeader() {
@@ -26,7 +26,7 @@ function InspirationHeader() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 function Fiction() {
@@ -52,7 +52,7 @@ function Fiction() {
         {ListText("A Series of Unfortunate Events, Lemony Snicket")}
       </div>
     </div>
-  )
+  );
 }
 
 function Nonfiction() {
@@ -76,7 +76,7 @@ function Nonfiction() {
         {ListText("The Glass Castle, Jeannette Walls")}
       </div>
     </div>
-  )
+  );
 }
 
 function Shows() {
@@ -89,7 +89,7 @@ function Shows() {
         </div>
       </div>
       <div className="grid grid-cols-1 items-start">
-        {ListText("Code Geass")}
+        {ListText("Psycho-Pass")}
         {ListText("The Boys")}
         {ListText("Bojack Horseman")}
         {ListText("Game of Thrones")}
@@ -97,9 +97,11 @@ function Shows() {
         {ListText("The Office")}
         {ListText("Fullmetal Alchemist")}
         {ListText("Death Note")}
+        {ListText("The Proud Twins (小鱼儿与花无缺)")}
+        {ListText("The Legend of the Condor Heroes (射雕英雄传)")}
       </div>
     </div>
-  )
+  );
 }
 
 function Movies() {
@@ -121,7 +123,7 @@ function Movies() {
         {ListText("Doctor Strange")}
       </div>
     </div>
-  )
+  );
 }
 
 function Misc() {
@@ -134,23 +136,17 @@ function Misc() {
         </div>
       </div>
       <div className="grid grid-cols-1 items-start">
-        {ListLink(
-          "The Woks of Life",
-          "https://thewoksoflife.com/",
-        )}
-        {ListLink(
-          "We Become What We Behold",
-          "https://ncase.itch.io/wbwwb",
-        )}
+        {ListLink("The Woks of Life", "https://thewoksoflife.com/")}
+        {ListLink("We Become What We Behold", "https://ncase.itch.io/wbwwb")}
         {ListLink(
           "Danger Days: The True Lives of the Fabulous Killjoys by My Chemical Romance",
-          "https://open.spotify.com/album/2wPnKggTK3QhYAKL7Q0vvr",
+          "https://open.spotify.com/album/2wPnKggTK3QhYAKL7Q0vvr"
         )}
         {ListLink(
           "Yuumei / Wenqing Yan",
-          "https://www.instagram.com/yuumeiart/",
+          "https://www.instagram.com/yuumeiart/"
         )}
       </div>
     </div>
-  )
+  );
 }
