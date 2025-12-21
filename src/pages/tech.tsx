@@ -80,6 +80,12 @@ let pragmaticEngineer: LinkWithIconModel = {
   icon: "/assets/icon-feed.png",
 };
 
+let wizardZines: LinkWithIconModel = {
+  linkText: "programming zines by Julia Evans",
+  linkUrl: "https://wizardzines.com/",
+  icon: "/assets/icon-star.png",
+};
+
 let androidSchool: LinkWithIconModel = {
   linkText: "Yelp Android School repo",
   linkUrl: "https://github.com/Yelp/android-school",
@@ -96,6 +102,7 @@ const resources = [
   androidWeekly,
   kotlinWeekly,
   pragmaticEngineer,
+  wizardZines,
   androidSchool,
   refactoringGuru,
 ];
