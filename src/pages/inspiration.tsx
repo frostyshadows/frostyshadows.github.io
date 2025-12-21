@@ -47,6 +47,7 @@ function Fiction() {
         {ListText("It, Stephen King")}
         {ListText("Oryx and Crake, Margaret Atwood")}
         {ListText("Jonathan Strange & Mr. Norrell, Susanna Clarke")}
+        {ListText("The MANIAC, Benjamín Labatut")}
         {ListText("Looking for Alaska, John Green")}
         {ListText("The Hunger Games, Suzanne Collins")}
         {ListText("A Series of Unfortunate Events, Lemony Snicket")}
@@ -89,12 +90,11 @@ function Shows() {
         </div>
       </div>
       <div className="grid grid-cols-1 items-start">
-        {ListText("Psycho-Pass")}
-        {ListText("The Boys")}
         {ListText("Bojack Horseman")}
         {ListText("Game of Thrones")}
         {ListText("Black Mirror")}
         {ListText("The Office")}
+        {ListText("The Boys")}
         {ListText("Fullmetal Alchemist")}
         {ListText("Death Note")}
         {ListText("The Proud Twins (小鱼儿与花无缺)")}
@@ -117,9 +117,10 @@ function Movies() {
         {ListText("Everything Everywhere All At Once")}
         {ListText("Interstellar")}
         {ListText("The Dark Knight")}
-        {ListText("The Prestige")}
         {ListText("Memento")}
         {ListText("Mad Max: Fury Road")}
+        {ListText("Perfect Blue")}
+        {ListText("Look Back")}
         {ListText("Doctor Strange")}
       </div>
     </div>

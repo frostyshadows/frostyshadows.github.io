@@ -1,41 +1,35 @@
+import React from "react";
+import CtaButton, { CtaButtonModel } from "../components/CtaButton";
 
-import React from 'react';
-import CtaButton, { CtaButtonModel } from '../components/CtaButton';
-
+// Contact page DEPRECATED in favor of SocialsFooter.
 let linkedIn: CtaButtonModel = {
   ctaText: "LinkedIn",
   ctaLink: "https://www.linkedin.com/in/sherry-yuan-375291a2/",
-  backgroundColor: "#1d4ed8"
-}
+  backgroundColor: "#1d4ed8",
+};
 let medium: CtaButtonModel = {
   ctaText: "Medium",
   ctaLink: "https://medium.com/@sherryyuan",
-  backgroundColor: "#0f766e"
-}
+  backgroundColor: "#0f766e",
+};
 
 let instagram: CtaButtonModel = {
   ctaText: "Instagram",
   ctaLink: "https://www.instagram.com/frostyshadows/",
-  backgroundColor: "#be185d"
-}
+  backgroundColor: "#be185d",
+};
 let github: CtaButtonModel = {
   ctaText: "Github",
   ctaLink: "https://github.com/frostyshadows",
-  backgroundColor: "#3f3f46"
-}
+  backgroundColor: "#3f3f46",
+};
 let redbubble: CtaButtonModel = {
   ctaText: "Redbubble",
   ctaLink: "https://www.redbubble.com/people/frostyshadows/shop?asc=u",
-  backgroundColor: "#b91c1c"
-}
+  backgroundColor: "#b91c1c",
+};
 
-const contactButtons = [
-  linkedIn,
-  medium,
-  instagram,
-  github,
-  redbubble,
-]
+const contactButtons = [linkedIn, medium, instagram, github, redbubble];
 
 export default function Contact() {
   return (
@@ -47,11 +41,10 @@ export default function Contact() {
           <div className="items-center text-center m-2 p-2">
             {CtaButton(contact)}
           </div>
-        ))
-        }
+        ))}
       </div>
     </div>
-  )
+  );
 }
 
 function ContactHeader() {
@@ -63,5 +56,5 @@ function ContactHeader() {
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -1,101 +1,104 @@
-import React from 'react';
-import { CtaButtonModel } from '../components/CtaButton';
-import Tile, { TileModel } from '../components/Tile';
-import ExternalLinkWithIcon, { LinkWithIconModel } from '../components/ExternalLinkWithIcon';
+import React from "react";
+import { CtaButtonModel } from "../components/CtaButton";
+import Tile, { TileModel } from "../components/Tile";
+import ExternalLinkWithIcon, {
+  LinkWithIconModel,
+} from "../components/ExternalLinkWithIcon";
 
 let mediumCta: CtaButtonModel = {
   ctaText: "read",
   ctaLink: "https://medium.com/@sherryyuan",
-}
+};
 let mediumBlog: TileModel = {
   title: "Medium Blog",
-  description: "Articles covering Android development, Kotlin, mobile interviews, and tech career. I've been published in Droidcon and Android Weekly.",
+  description:
+    "Articles covering Android development, Kotlin, mobile interviews, and tech career. I've been published in Droidcon and Android Weekly.",
   ctaButton: mediumCta,
-}
+};
 
 let emomTimerCta: CtaButtonModel = {
   ctaText: "download",
-  ctaLink: "https://play.google.com/store/apps/details?id=com.sherryyuan.emomtimer&hl=en_US&gl=US",
-}
+  ctaLink:
+    "https://play.google.com/store/apps/details?id=com.sherryyuan.emomtimer&hl=en_US&gl=US",
+};
 let emomTimer: TileModel = {
   title: "EmomTimer",
-  description: "Easy-to-use app allowing you to create EMOM workouts and time them.",
+  description:
+    "Easy-to-use app allowing you to create EMOM workouts and time them.",
   ctaButton: emomTimerCta,
-}
+};
 
 let coffeeAndCodingCta: CtaButtonModel = {
   ctaText: "listen",
-  ctaLink: "https://coffeeandcodingpod.com/s1-e8-8-working-with-internal-libraries-why-theyre-useful-writing-open-source-software-dependency-injection-declarative-ui-frameworks-with-sherry-yuan/",
-}
+  ctaLink:
+    "https://coffeeandcodingpod.com/s1-e8-8-working-with-internal-libraries-why-theyre-useful-writing-open-source-software-dependency-injection-declarative-ui-frameworks-with-sherry-yuan/",
+};
 let coffeeAndCoding: TileModel = {
   title: "Coffee & Coding Interview",
-  description: "Discussion on working with internal libraries, dependency injection, and declarative UI frameworks.",
+  description:
+    "Discussion on working with internal libraries, dependency injection, and declarative UI frameworks.",
   timestamp: "Coffee & Coding Podcast S1E8 (Summer 2020)",
   ctaButton: coffeeAndCodingCta,
-}
+};
 
 let tapiaCta: CtaButtonModel = {
   ctaText: "read event description",
-  ctaLink: "https://tapia.harmonyapp.com/schedule/friday-september-18-2020/130pm-215pm/fueling-your-career-with-coffee-chats/",
-}
+  ctaLink:
+    "https://tapia.harmonyapp.com/schedule/friday-september-18-2020/130pm-215pm/fueling-your-career-with-coffee-chats/",
+};
 let tapia: TileModel = {
   title: "TAPIA Conference Workshop",
-  description: "An early-career workshop with tips on how to Fuel Your Career With Coffee Chats.",
+  description:
+    "An early-career workshop with tips on how to Fuel Your Career With Coffee Chats.",
   timestamp: "Fall 2020",
   ctaButton: tapiaCta,
-}
+};
 
-const projects = [
-  mediumBlog,
-  emomTimer,
-  coffeeAndCoding,
-  tapia,
-]
+const projects = [mediumBlog, emomTimer, coffeeAndCoding, tapia];
 
 let androidWeekly: LinkWithIconModel = {
   linkText: "Android Weekly newsletter",
   linkUrl: "https://androidweekly.net/",
   icon: "/assets/icon-feed.png",
-}
+};
 
 let kotlinWeekly: LinkWithIconModel = {
   linkText: "Kotlin Weekly newsletter",
   linkUrl: "http://www.kotlinweekly.net/",
   icon: "/assets/icon-feed.png",
-}
+};
 
 let swlw: LinkWithIconModel = {
   linkText: "Software Lead Weekly newsletter",
   linkUrl: "https://softwareleadweekly.com/",
   icon: "/assets/icon-feed.png",
-}
+};
 
 let pragmaticEngineer: LinkWithIconModel = {
   linkText: "The Pragmatic Engineer newsletter",
   linkUrl: "https://newsletter.pragmaticengineer.com/",
   icon: "/assets/icon-feed.png",
-}
+};
 
 let androidSchool: LinkWithIconModel = {
   linkText: "Yelp Android School repo",
   linkUrl: "https://github.com/Yelp/android-school",
   icon: "/assets/icon-github.png",
-}
+};
 
 let refactoringGuru: LinkWithIconModel = {
   linkText: "Refactoring Guru",
   linkUrl: "https://refactoring.guru/refactoring",
   icon: "/assets/icon-web.png",
-}
+};
 
 const resources = [
   androidWeekly,
   kotlinWeekly,
-  swlw,
   pragmaticEngineer,
   androidSchool,
   refactoringGuru,
-]
+];
 
 export default function Tech() {
   return (
@@ -104,15 +107,12 @@ export default function Tech() {
 
       <div className="max-w-7xl mx-auto py-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 items-start">
-          {projects.map((project) => (
-            Tile(project)
-          ))
-          }
+          {projects.map((project) => Tile(project))}
         </div>
         {TechResources()}
       </div>
     </div>
-  )
+  );
 }
 
 function TechHeader() {
@@ -123,13 +123,15 @@ function TechHeader() {
           <p>Tech</p>
         </div>
         <p className="lg:w-3/5 flex text-l text-start leading-loose">
-          I've always been interested in mobile development, and was lucky to land an Android engineering position for my first co-op
-          placement in 2017. I've focused on Android ever since.
-          My favorite way to keep learning is through writing guides and tutorials for the developer community!
+          I've always been interested in mobile development, and was lucky to
+          land an Android engineering position for my first co-op placement in
+          2017. I've focused on Android ever since. My favorite way to keep
+          learning is through writing guides and tutorials for the developer
+          community!
         </p>
       </div>
     </div>
-  )
+  );
 }
 
 function TechResources() {
@@ -142,14 +144,12 @@ function TechResources() {
         </div>
       </div>
       <p className="w-3/5 flex text-l text-start leading-loose italic">
-        Favorite resources for learning and staying on top of software engineering.
+        Favorite resources for learning and staying on top of software
+        engineering.
       </p>
       <div className="grid grid-cols-1 items-start">
-        {resources.map((resource) => (
-          ExternalLinkWithIcon(resource)
-        ))
-        }
+        {resources.map((resource) => ExternalLinkWithIcon(resource))}
       </div>
     </div>
-  )
+  );
 }
