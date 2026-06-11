@@ -121,6 +121,7 @@ function Movies() {
         {ListText("Mad Max: Fury Road")}
         {ListText("Perfect Blue")}
         {ListText("Look Back")}
+        {ListText("Donnie Darko")}
         {ListText("Doctor Strange")}
       </div>
     </div>
@@ -141,11 +142,11 @@ function Misc() {
         {ListLink("We Become What We Behold", "https://ncase.itch.io/wbwwb")}
         {ListLink(
           "Danger Days: The True Lives of the Fabulous Killjoys by My Chemical Romance",
-          "https://open.spotify.com/album/2wPnKggTK3QhYAKL7Q0vvr"
+          "https://open.spotify.com/album/2wPnKggTK3QhYAKL7Q0vvr",
         )}
         {ListLink(
           "Yuumei / Wenqing Yan",
-          "https://www.instagram.com/yuumeiart/"
+          "https://www.instagram.com/yuumeiart/",
         )}
       </div>
     </div>

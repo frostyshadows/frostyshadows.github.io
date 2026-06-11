@@ -17,3 +17,8 @@ body {
   font-family: 'Mulish';
   src: local('Mulish'), url(/fonts/Mulish-Regular.ttf) format('ttf');
 }
+
+@font-face {
+  font-family: 'Ovo';
+  src: local('Ovo'), url(/fonts/Ovo-Regular.ttf) format('truetype');
+}

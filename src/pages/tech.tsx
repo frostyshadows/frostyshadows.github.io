@@ -129,12 +129,10 @@ function TechHeader() {
         <div className="flex text-5xl font-serif pb-12">
           <p>Tech</p>
         </div>
-        <p className="lg:w-3/5 flex text-l text-start leading-loose">
-          I've always been interested in mobile development, and was lucky to
-          land an Android engineering position for my first co-op placement in
-          2017. I've focused on Android ever since. My favorite way to keep
-          learning is through writing guides and tutorials for the developer
-          community!
+        <p className="lg:w-4/5 flex text-l text-start leading-loose">
+          I've been building for Android since 2017, and dipping T-shaped toes
+          into iOS and backend more recently. I like to learn out loud through
+          writing guides and tutorials for the developer community.
         </p>
       </div>
     </div>

@@ -156,12 +156,15 @@ function FictionHeader() {
         <div className="flex text-5xl font-serif pb-12">
           <p>Fiction</p>
         </div>
-        <p className="lg:w-3/5 flex text-l text-start leading-loose">
-          I've published a few short stories so far, mostly speculative fiction,
-          and one of my life goals is to publish a novel. To me, programming and
-          fiction writing are symbiotic creative hobbies - there are many
-          parallels in the processes of planning a feature or story, writing
-          code or narrative, receiving feedback, and revising.
+        <p className="lg:w-4/5 text-l text-start leading-loose">
+          I've published several short stories, mostly speculative fiction, and
+          am currently working on my first novel. My work has been supported by
+          the Periplus and Rooted & Written fellowships.
+        </p>
+        <p className="lg:w-4/5 text-l text-start leading-loose">
+          To me, programming and fiction writing are symbiotic creative hobbies
+          - there are many parallels in the processes of planning a feature or
+          story, writing code or narrative, receiving feedback, and revising.
         </p>
       </div>
     </div>
