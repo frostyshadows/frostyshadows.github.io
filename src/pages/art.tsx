@@ -136,7 +136,7 @@ let proximity: ArtworkModel = {
   imageUrl: "/assets/artwork/proximity.PNG",
   title: "Proximity",
   materials: "Digital",
-  details: 'Album art for Zack Kysar\'s single "Proximity"',
+  details: 'Album art for Zach Kysar\'s single "Proximity"',
 };
 
 let yearOfTheRabbit: ArtworkModel = {

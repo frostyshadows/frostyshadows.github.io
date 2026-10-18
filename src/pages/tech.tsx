@@ -16,6 +16,18 @@ let mediumBlog: TileModel = {
   ctaButton: mediumCta,
 };
 
+let aphoraCta: CtaButtonModel = {
+  ctaText: "download",
+  ctaLink:
+    "https://play.google.com/store/apps/details?id=com.sherryyuan.aphora&hl=en_US",
+};
+let aphora: TileModel = {
+  title: "Aphora",
+  description:
+    "An app for collecting quotes you love from books, movies, essays, etc.",
+  ctaButton: aphoraCta,
+};
+
 let emomTimerCta: CtaButtonModel = {
   ctaText: "download",
   ctaLink:
@@ -54,7 +66,7 @@ let tapia: TileModel = {
   ctaButton: tapiaCta,
 };
 
-const projects = [mediumBlog, emomTimer, coffeeAndCoding, tapia];
+const projects = [mediumBlog, aphora, emomTimer, coffeeAndCoding, tapia];
 
 let androidWeekly: LinkWithIconModel = {
   linkText: "Android Weekly newsletter",
